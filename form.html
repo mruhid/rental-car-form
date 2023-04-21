@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./rentacar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="bir()">iki</button>
+                <button type="button" class="toggle-btn" onclick="iki()">bir</button>
+                
+                
+
+            </div>
+                 
+             <form id="login" action="" method="post" class="input-group">
+                <div class="h1"><h3 style="display: flex; justify-content: ;">Rent-a-Car Registration Form</h3></div>
+                
+                  <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+            <button type="submit" class="submit-btn" onclick="bir()">Next</button>
+           </form>
+
+
+           <form id="register" action="" class="input-group">
+            <div>
+      <label for="car-type">Car Type:</label>
+      <select id="car-type" name="car-type" required>
+        <option value="">Select Car Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="truck">Truck</option>
+      </select>
+    </div>
+    <div>
+      <label for="pickup-date">Pickup Date:</label>
+      <input type="date" id="pickup-date" name="pickup-date" required>
+    </div>
+    <div>
+      <label for="return-date">Return Date:</label>
+      <input type="date" id="return-date" name="return-date" required>
+    </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+           </form>
+           
+        </div>
+       
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+        function bir(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+
+
+        }
+        function iki(){
+            x.style.left="0px";
+            y.style.left="450px";
+            z.style.left="0px";
+
+
+        }
+        
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
